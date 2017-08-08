@@ -67,19 +67,19 @@ extension MTransition:UIViewControllerAnimatedTransitioning {
                     
                     presentedView.center = viewCenter
                     
-                }, completion: { (success:Bool) in
-                    
-                    UIView.animate(withDuration: 0.05, animations: {
-                        presentedView.alpha = 1
-                    })
-                    transitionContext.completeTransition(success)
+                    }, completion: { (success:Bool) in
+                        
+                        UIView.animate(withDuration: 0.05, animations: {
+                            presentedView.alpha = 1
+                        })
+                        transitionContext.completeTransition(success)
                 })
             }
             
         }
             
         else {
-            
+         
             //dismiss
             if let returningView = transitionContext.view(forKey: UITransitionContextViewKey.from) {
                 let viewCenter = returningView.center
@@ -100,15 +100,15 @@ extension MTransition:UIViewControllerAnimatedTransitioning {
                     returningView.transform = CGAffineTransform(scaleX: self.transformValue, y: self.transformValue)
                     returningView.center = self.startingPoint
                     
-                }, completion: { (success:Bool) in
-                    
-                    returningView.center = viewCenter
-                    returningView.removeFromSuperview()
-                    
-                    self.circle.removeFromSuperview()
-                    
-                    transitionContext.completeTransition(success)
-                    
+                    }, completion: { (success:Bool) in
+                        
+                        returningView.center = viewCenter
+                        returningView.removeFromSuperview()
+                        
+                        self.circle.removeFromSuperview()
+                        
+                        transitionContext.completeTransition(success)
+                        
                 })
                 
             }
