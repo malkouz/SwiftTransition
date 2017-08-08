@@ -24,6 +24,6 @@ class SecondViewController: UIViewController {
     
     
     @IBAction func hideAction(sender: UIButton){
-        
+        self.dismiss(animated: true, completion: nil)
     }
 }

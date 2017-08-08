@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		0A3004DD64B12B77D85053A90B83FEFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		1D66BFDB28F0E6B9A71A192259FF0554 /* Pods-TransitionExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CFB1289F8B922ECD480AFA4A297A54 /* Pods-TransitionExample-dummy.m */; };
-		2469DF59BDA90B6ECC5964FE0FED76ED /* SwiftTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 726F5B1C82A5B5869C6097F5C6861186 /* SwiftTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2469DF59BDA90B6ECC5964FE0FED76ED /* SwiftTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 821241A13D5B78D0E1F680B16EEA7AE9 /* SwiftTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F294998C0983E3B21F3704AFA763167 /* Pods-TransitionExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C0E80CE626EF120C0EC76580D92976D /* Pods-TransitionExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4908EB68244C738CD4C7AC79775B6739 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		D7118D31791D4239C3566DB05E455ADC /* SwiftTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F5B4F95CC74E7C827A52AD4329E89A /* SwiftTransition-dummy.m */; };
-		E25C82724B12440C84DBB4FF892E8D4E /* MTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279A4656939B1859B860F17B699156D2 /* MTransition.swift */; };
+		7DD66A87C89B4F19648C7D16BC4FEE7B /* SwiftTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 421E79443D6DDD16F96F3399D4B43353 /* SwiftTransition-dummy.m */; };
+		CD847322A57F6424CA58040E51969DB7 /* MTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222690F2B234B201C0025E432AB3BD26 /* MTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,25 +29,25 @@
 /* Begin PBXFileReference section */
 		0103147F0DDDF8F07DED521A2DD42AC6 /* Pods-TransitionExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TransitionExample-frameworks.sh"; sourceTree = "<group>"; };
 		02CFB1289F8B922ECD480AFA4A297A54 /* Pods-TransitionExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TransitionExample-dummy.m"; sourceTree = "<group>"; };
-		08B90EB809F9A0598F9B90E5C327089C /* SwiftTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftTransition.modulemap; sourceTree = "<group>"; };
-		14046E1E77D4A93174F4D0D1E01AE56B /* SwiftTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftTransition-prefix.pch"; sourceTree = "<group>"; };
-		279A4656939B1859B860F17B699156D2 /* MTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MTransition.swift; sourceTree = "<group>"; };
+		222690F2B234B201C0025E432AB3BD26 /* MTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MTransition.swift; path = SwiftTransition/Classes/MTransition.swift; sourceTree = "<group>"; };
 		3996B3E7C452FC3B1ADE41011D88E357 /* Pods-TransitionExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TransitionExample.debug.xcconfig"; sourceTree = "<group>"; };
 		3A4F734B214D708904E33F43241820BA /* Pods-TransitionExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TransitionExample.release.xcconfig"; sourceTree = "<group>"; };
+		421E79443D6DDD16F96F3399D4B43353 /* SwiftTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftTransition-dummy.m"; sourceTree = "<group>"; };
 		4FF891DB0C690969749305BAA5688EDA /* Pods-TransitionExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TransitionExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5C0E80CE626EF120C0EC76580D92976D /* Pods-TransitionExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TransitionExample-umbrella.h"; sourceTree = "<group>"; };
 		5EDC797AE76B89B2C388EFA301C09E74 /* Pods_TransitionExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TransitionExample.framework; path = "Pods-TransitionExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6586B066EB7388F47C5B1970D6AFC9E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		726F5B1C82A5B5869C6097F5C6861186 /* SwiftTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftTransition-umbrella.h"; sourceTree = "<group>"; };
+		821241A13D5B78D0E1F680B16EEA7AE9 /* SwiftTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftTransition-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		978821887E7470EB4ADDBF94BB096D27 /* Pods-TransitionExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TransitionExample.modulemap"; sourceTree = "<group>"; };
-		A7F5B4F95CC74E7C827A52AD4329E89A /* SwiftTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftTransition-dummy.m"; sourceTree = "<group>"; };
+		B3900FFDC334975AC6FF4F402AD7196A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE08516AB93F75D6D079F24C84D5F3AC /* Pods-TransitionExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TransitionExample-resources.sh"; sourceTree = "<group>"; };
-		C33084FF2EAD8B52C00A247EF6647E0F /* SwiftTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftTransition.xcconfig; sourceTree = "<group>"; };
+		CCB8579ECB4B19E8D00A792344141949 /* SwiftTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftTransition.modulemap; sourceTree = "<group>"; };
+		D0820C3420261A2EA9CDE901950A8226 /* SwiftTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftTransition-prefix.pch"; sourceTree = "<group>"; };
 		D5475AC9E48C48AE759EDA106B105297 /* SwiftTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftTransition.framework; path = SwiftTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD9B2FCF6569FC7E5880338156DDB247 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0EE800D7601CE9EA5B9F1A9B6983CAA /* Pods-TransitionExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TransitionExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		F2DE20FB618CAEF928D0EA049BF5D5C1 /* SwiftTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftTransition.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,29 +78,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		1D2BA6A172DD8CEDC9CE5A285883D7B9 /* SwiftTransition */ = {
-			isa = PBXGroup;
-			children = (
-				C6045E61FB41E96F47E22D024229C7CC /* Classes */,
-			);
-			name = SwiftTransition;
-			path = SwiftTransition;
-			sourceTree = "<group>";
-		};
-		4EAABD5B47B3C4BB48D0F16884796D33 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DD9B2FCF6569FC7E5880338156DDB247 /* Info.plist */,
-				08B90EB809F9A0598F9B90E5C327089C /* SwiftTransition.modulemap */,
-				C33084FF2EAD8B52C00A247EF6647E0F /* SwiftTransition.xcconfig */,
-				A7F5B4F95CC74E7C827A52AD4329E89A /* SwiftTransition-dummy.m */,
-				14046E1E77D4A93174F4D0D1E01AE56B /* SwiftTransition-prefix.pch */,
-				726F5B1C82A5B5869C6097F5C6861186 /* SwiftTransition-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "TransitionExample/Pods/Target Support Files/SwiftTransition";
-			sourceTree = "<group>";
-		};
 		746AF6D4C09B04CEA5B4BC393EC7C765 /* Pods-TransitionExample */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,25 +96,37 @@
 			path = "Target Support Files/Pods-TransitionExample";
 			sourceTree = "<group>";
 		};
+		77B44EEDE193CB4EB805900630051A0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E11262F1AA393CF4CA44212C18C21D8C /* SwiftTransition */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				E6B71FC1FDFEB42ED54F5C790962CECF /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				77B44EEDE193CB4EB805900630051A0F /* Pods */,
 				C8444CC2B95D413D480DCE4D5FD66664 /* Products */,
 				0473559F9788849D5055E46556747F35 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BAB273092F6FD400DF4B7C33102ABDB6 /* SwiftTransition */ = {
+		7F36B1923A25EC2E839647B2CAD98B16 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4EAABD5B47B3C4BB48D0F16884796D33 /* Support Files */,
-				1D2BA6A172DD8CEDC9CE5A285883D7B9 /* SwiftTransition */,
+				B3900FFDC334975AC6FF4F402AD7196A /* Info.plist */,
+				CCB8579ECB4B19E8D00A792344141949 /* SwiftTransition.modulemap */,
+				F2DE20FB618CAEF928D0EA049BF5D5C1 /* SwiftTransition.xcconfig */,
+				421E79443D6DDD16F96F3399D4B43353 /* SwiftTransition-dummy.m */,
+				D0820C3420261A2EA9CDE901950A8226 /* SwiftTransition-prefix.pch */,
+				821241A13D5B78D0E1F680B16EEA7AE9 /* SwiftTransition-umbrella.h */,
 			);
-			name = SwiftTransition;
-			path = ../..;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftTransition";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -146,15 +135,6 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C6045E61FB41E96F47E22D024229C7CC /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				279A4656939B1859B860F17B699156D2 /* MTransition.swift */,
-			);
-			name = Classes;
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		C8444CC2B95D413D480DCE4D5FD66664 /* Products */ = {
@@ -174,12 +154,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		E6B71FC1FDFEB42ED54F5C790962CECF /* Development Pods */ = {
+		E11262F1AA393CF4CA44212C18C21D8C /* SwiftTransition */ = {
 			isa = PBXGroup;
 			children = (
-				BAB273092F6FD400DF4B7C33102ABDB6 /* SwiftTransition */,
+				222690F2B234B201C0025E432AB3BD26 /* MTransition.swift */,
+				7F36B1923A25EC2E839647B2CAD98B16 /* Support Files */,
 			);
-			name = "Development Pods";
+			name = SwiftTransition;
+			path = SwiftTransition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,7 +208,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D1873FC009D1FE0F1010CACCE8ECBC5 /* Build configuration list for PBXNativeTarget "SwiftTransition" */;
 			buildPhases = (
-				36398305E518B0A0609F200A56DA389C /* Sources */,
+				E021EBEFF4FD691CC9E1D0ED38157199 /* Sources */,
 				AFB38064985140D5B3941E0DC61A6EC2 /* Frameworks */,
 				1E3A454F42755A7B0873A2ED6F15A642 /* Headers */,
 			);
@@ -267,20 +249,20 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		36398305E518B0A0609F200A56DA389C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E25C82724B12440C84DBB4FF892E8D4E /* MTransition.swift in Sources */,
-				D7118D31791D4239C3566DB05E455ADC /* SwiftTransition-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AB4BBC74F7439CB3059AC4768582F06C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1D66BFDB28F0E6B9A71A192259FF0554 /* Pods-TransitionExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E021EBEFF4FD691CC9E1D0ED38157199 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD847322A57F6424CA58040E51969DB7 /* MTransition.swift in Sources */,
+				7DD66A87C89B4F19648C7D16BC4FEE7B /* SwiftTransition-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +363,7 @@
 		};
 		4DA019773D14CEDA3DA39FE3640412EB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C33084FF2EAD8B52C00A247EF6647E0F /* SwiftTransition.xcconfig */;
+			baseConfigurationReference = F2DE20FB618CAEF928D0EA049BF5D5C1 /* SwiftTransition.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -454,7 +436,7 @@
 		};
 		79CE491FCF78254BBEE72871105927CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C33084FF2EAD8B52C00A247EF6647E0F /* SwiftTransition.xcconfig */;
+			baseConfigurationReference = F2DE20FB618CAEF928D0EA049BF5D5C1 /* SwiftTransition.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
