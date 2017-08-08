@@ -1,0 +1,16 @@
+PODS:
+  - SwiftTransition (1.0)
+
+DEPENDENCIES:
+  - SwiftTransition (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftTransition:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SwiftTransition: c20ecd105e0f9eaa5c953dcc3d89e3a4c026c881
+
+PODFILE CHECKSUM: 71c7d2c0a8f45dc59c09d9430fc06c2816e12152
+
+COCOAPODS: 1.2.1

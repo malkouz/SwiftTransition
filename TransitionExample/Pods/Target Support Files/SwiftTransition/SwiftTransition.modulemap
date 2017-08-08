@@ -1,0 +1,6 @@
+framework module SwiftTransition {
+  umbrella header "SwiftTransition-umbrella.h"
+
+  export *
+  module * { export * }
+}
