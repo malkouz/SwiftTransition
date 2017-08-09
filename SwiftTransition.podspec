@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftTransition'
-  s.version          = '1.0'
+  s.version          = '1.2'
   s.summary          = 'View controller transition animation.'
 
 # This description is used to generate tags and improve search results.
