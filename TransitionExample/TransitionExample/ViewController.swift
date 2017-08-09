@@ -28,22 +28,24 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate {
 
 
     @IBAction func showAction(sender: UIButton){
-//        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SecondViewController")
-//        vc.transitioningDelegate = self
-//        vc.modalPresentationStyle = .custom
-//        transition.startingPoint = btnShow.center
-//        transition.circleColor = btnShow.backgroundColor!
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SecondViewController")
+        vc.transitioningDelegate = self
+        vc.modalPresentationStyle = .custom
+        transition.startingPoint = btnShow.center
+        transition.circleColor = btnShow.backgroundColor!
+        
+        self.present(vc, animated: true, completion: nil)
     }
     
     
-//    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-//        transition.transitionMode = .present
-//        return transition
-//    }
-//    
-//    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-//        transition.transitionMode = .dismiss
-//        return transition
-//    }
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .present
+        return transition
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .dismiss
+        return transition
+    }
 }
 

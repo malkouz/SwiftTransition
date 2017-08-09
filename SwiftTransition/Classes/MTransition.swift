@@ -8,36 +8,36 @@
 
 import UIKit
 
-class MTransition: NSObject {
+open class MTransition: NSObject {
     
-    var transformValue:CGFloat = 0.06
+    public var transformValue:CGFloat = 0.06
     
-    var circle = UIView()
+    public var circle = UIView()
     
-    var startingPoint = CGPoint.zero {
+    public var startingPoint = CGPoint.zero {
         didSet {
             circle.center = startingPoint
         }
     }
     
-    var circleColor = UIColor.white
+    public var circleColor = UIColor.white
     
-    var duration = 0.35
+    public var duration = 0.30
     
-    enum TransitionMode:Int {
+    public enum TransitionMode:Int {
         case present, dismiss
     }
     
-    var transitionMode:TransitionMode = .present
+    public var transitionMode:TransitionMode = .present
     
 }
 
 extension MTransition:UIViewControllerAnimatedTransitioning {
-    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+    public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return duration
     }
     
-    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+    public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         let containerView = transitionContext.containerView
         
         if transitionMode == .present {
