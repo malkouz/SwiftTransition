@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'TransitionExample' do
-  pod 'SwiftTransition', :path => "../"
+  pod 'SwiftTransition'
 
   
 end

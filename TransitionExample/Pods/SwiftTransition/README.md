@@ -4,6 +4,8 @@
 [![License](https://img.shields.io/cocoapods/l/SwiftTransition.svg?style=flat)](http://cocoapods.org/pods/SwiftTransition)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftTransition.svg?style=flat)](http://cocoapods.org/pods/SwiftTransition)
 
+# Screenshot
+![BubbleTransition](https://github.com/malkouz/SwiftTransition/blob/master/screenshots/ezgif-1-263696505e.gif)
 
 ## Beautiful transition animation like bubbles.
 Beautiful bubbles transition animation for view conrollers
