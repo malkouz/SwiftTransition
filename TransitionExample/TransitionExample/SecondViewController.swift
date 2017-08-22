@@ -23,7 +23,12 @@ class SecondViewController: UIViewController {
     }
     
     
-    @IBAction func hideAction(sender: UIButton){
+    @IBAction func dismissAction(sender: UIButton){
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func popAction(sender: UIButton){
+        self.navigationController?.popViewController(animated: true)
     }
 }
