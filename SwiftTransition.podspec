@@ -22,7 +22,6 @@ Beautiful transition animation for view conrollers
                        DESC
 
   s.homepage         = 'https://github.com/malkouz/SwiftTransition'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Moayad Al kouz' => 'moayad_kouz9@hotmail.com' }
   s.source           = { :git => 'https://github.com/malkouz/SwiftTransition.git', :tag => s.version.to_s }
@@ -31,5 +30,5 @@ Beautiful transition animation for view conrollers
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'SwiftTransition/Classes/**/*'
-  
+
 end

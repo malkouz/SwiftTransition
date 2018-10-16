@@ -10,7 +10,7 @@ import UIKit
 
 open class MTransition: NSObject {
     
-    public var transformValue:CGFloat = 0.06
+    public var transformValue: CGFloat = 0.06
     
     public var circle = UIView()
     
@@ -24,15 +24,15 @@ open class MTransition: NSObject {
     
     public var duration = 0.30
     
-    public enum TransitionMode:Int {
+    public enum TransitionMode: Int {
         case present, dismiss
     }
     
-    public var transitionMode:TransitionMode = .present
+    public var transitionMode: TransitionMode = .present
     
 }
 
-extension MTransition:UIViewControllerAnimatedTransitioning {
+extension MTransition: UIViewControllerAnimatedTransitioning {
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return duration
     }
@@ -47,7 +47,7 @@ extension MTransition:UIViewControllerAnimatedTransitioning {
                 
                 circle = UIView()
                 
-                circle.frame = frameForCircle(withViewCenter: viewCenter, size: viewSize, startPoint: startingPoint)
+                circle.frame = UIView.frameForCircle(withViewCenter: viewCenter, size: viewSize, startPoint: startingPoint)
                 
                 circle.layer.cornerRadius = circle.frame.size.height / 2
                 circle.center = startingPoint
@@ -85,7 +85,7 @@ extension MTransition:UIViewControllerAnimatedTransitioning {
                 let viewCenter = returningView.center
                 let viewSize = returningView.frame.size
                 
-                circle.frame = frameForCircle(withViewCenter: viewCenter, size: viewSize, startPoint: startingPoint)
+                circle.frame = UIView.frameForCircle(withViewCenter: viewCenter, size: viewSize, startPoint: startingPoint)
                 
                 circle.layer.cornerRadius = circle.frame.size.height / 2
                 circle.center = startingPoint
@@ -108,22 +108,8 @@ extension MTransition:UIViewControllerAnimatedTransitioning {
                         self.circle.removeFromSuperview()
                         
                         transitionContext.completeTransition(success)
-                        
                 })
-                
             }
-            
         }
-        
-    }
-    
-    func frameForCircle (withViewCenter viewCenter:CGPoint, size viewSize:CGSize, startPoint:CGPoint) -> CGRect {
-        let xLength = fmax(startPoint.x, viewSize.width - startPoint.x)
-        let yLength = fmax(startPoint.y, viewSize.height - startPoint.y)
-        
-        let offsetVector = sqrt(xLength * xLength + yLength * yLength) * 2
-        let size = CGSize(width: offsetVector, height: offsetVector)
-        
-        return CGRect(origin: CGPoint.zero, size: size)
     }
 }
