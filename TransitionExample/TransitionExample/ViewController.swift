@@ -80,7 +80,7 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate, UI
         }
     }
     
-    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         navTranstion.operation = operation
         navigationController.view.backgroundColor = self.view.backgroundColor
         return navTranstion
