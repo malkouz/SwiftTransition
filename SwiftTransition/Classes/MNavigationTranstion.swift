@@ -10,7 +10,7 @@ import UIKit
 
 open class MNavigationTranstion: NSObject, UIViewControllerAnimatedTransitioning {
     
-    public var transformValue:CGFloat = 0.06
+    public var transformValue: CGFloat = 0.06
     
     public var circle = UIView()
     
@@ -24,7 +24,7 @@ open class MNavigationTranstion: NSObject, UIViewControllerAnimatedTransitioning
     
     public var duration = 0.30
     
-    public var operation: UINavigationControllerOperation = .push
+    public var operation: UINavigationController.Operation = .push
     
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.3
@@ -43,7 +43,7 @@ open class MNavigationTranstion: NSObject, UIViewControllerAnimatedTransitioning
                 
                 circle = UIView()
                 
-                circle.frame = frameForCircle(withViewCenter: viewCenter, size: viewSize, startPoint: startingPoint)
+                circle.frame = UIView.frameForCircle(withViewCenter: viewCenter, size: viewSize, startPoint: startingPoint)
                 
                 circle.layer.cornerRadius = circle.frame.size.height / 2
                 circle.center = startingPoint
@@ -79,12 +79,11 @@ open class MNavigationTranstion: NSObject, UIViewControllerAnimatedTransitioning
                 let viewCenter = returningView.center
                 let viewSize = returningView.frame.size
                 
-                circle.frame = frameForCircle(withViewCenter: viewCenter, size: viewSize, startPoint: startingPoint)
+                circle.frame = UIView.frameForCircle(withViewCenter: viewCenter, size: viewSize, startPoint: startingPoint)
                 circle.layer.cornerRadius = circle.frame.size.height / 2
                 circle.center = startingPoint
                 
                 UIView.animate(withDuration: 0.05, animations: {
-                    //                    toViewController.view.alpha = 0
                     returningView.alpha = 0
                 })
                 
@@ -101,24 +100,10 @@ open class MNavigationTranstion: NSObject, UIViewControllerAnimatedTransitioning
                         
                         self.circle.removeFromSuperview()
                         self.operation = .push
-                        //                    toViewController.view.alpha = 1
                         containerView.insertSubview(toViewController.view, belowSubview: fromViewController.view)
                         transitionContext.completeTransition(success)
-                        
-                        
                 })
-                
             }
         }
-    }
-    
-    func frameForCircle (withViewCenter viewCenter:CGPoint, size viewSize:CGSize, startPoint:CGPoint) -> CGRect {
-        let xLength = fmax(startPoint.x, viewSize.width - startPoint.x)
-        let yLength = fmax(startPoint.y, viewSize.height - startPoint.y)
-        
-        let offsetVector = sqrt(xLength * xLength + yLength * yLength) * 2
-        let size = CGSize(width: offsetVector, height: offsetVector)
-        
-        return CGRect(origin: CGPoint.zero, size: size)
     }
 }
